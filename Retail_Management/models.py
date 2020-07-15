@@ -29,7 +29,7 @@ class address(models.Model):
     )
 
     def __str__(self):
-        return f'{self.address1} {self.address2},{self.city},{self.state}-{self.pincode}'#self.address1 + ' ' + self.address2 + self.city
+        return f'{self.address1} {self.address2},{self.city},{self.state}-{self.pincode}'
 
     class Meta:
         verbose_name_plural = 'address'
@@ -45,7 +45,6 @@ class delivery_agent(models.Model):
 
     class Meta:
         verbose_name_plural = 'Delivery Agent'
-
 
 
 class dealer(models.Model):
